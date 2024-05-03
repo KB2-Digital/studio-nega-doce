@@ -11,34 +11,35 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
     rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <title>Studio Nega Doce</title>
 </head>
 
 <body>
-  <header>
+  <header id="home">
     <img src="./assets/logotipo-header.png" alt="Studio Nega Doce" />
     <ul>
-      <a href="#">
+      <a href="#home">
         <li>Home</li>
       </a>
-      <a href="#">
+      <a href="#services">
         <li>Serviços</li>
       </a>
-      <a href="#">
+      <a href="#about">
         <li>Sobre mim</li>
       </a>
-      <a href="#">
+      <a href="#contact">
         <li>Contato</li>
       </a>
     </ul>
-    <a href="#" class="button">Agende agora</a>
+    <a href="#form-content" class="button">Agende agora</a>
   </header>
   <main>
     <div class="hero">
       <img class="hero-img-logo" src="./assets/logo-bykawane.png" alt="Studio Nega Doce" />
       <img class="hero-img" src="./assets/mulher-hero.png" />
     </div>
-    <div class="services">
+    <div id="services">
       <h2>Nossos serviços</h2>
       <section>
         <div class="services-title">
@@ -48,7 +49,7 @@
         <div class="services-carrousel">
           <div class="services-card">
             <img src="./assets/box-braids.jpg" alt="" />
-            <span>Trança Nagô</span>
+            <span>Box Braids</span>
           </div>
           <div class="services-card">
             <img src="./assets/trança-nago.jpg" alt="" />
@@ -56,35 +57,35 @@
           </div>
           <div class="services-card">
             <img src="./assets/passion-twist.jpg" alt="" />
-            <span>Trança Nagô</span>
+            <span>Passion Twist</span>
           </div>
           <div class="services-card">
             <img src="./assets/trança-twist.jpg" alt="" />
-            <span>Trança Nagô</span>
+            <span>Twist</span>
           </div>
           <div class="services-card">
             <img src="./assets/french-curl-braids.jpg" alt="" />
-            <span>Trança Nagô</span>
+            <span>French Curl Braids</span>
           </div>
           <div class="services-card">
             <img src="./assets/criss-cross-braids.jpg" alt="" />
-            <span>Trança Nagô</span>
+            <span>Criss Cross Braids</span>
           </div>
           <div class="services-card">
             <img src="./assets/goddess-braids.jpg" alt="" />
-            <span>Trança Nagô</span>
+            <span>Goddess Braids</span>
           </div>
           <div class="services-card">
             <img src="./assets/braids-with-beads.jpg" alt="" />
-            <span>Trança Nagô</span>
+            <span>Braids with beads</span>
           </div>
           <div class="services-card">
             <img src="./assets/entrelace.jpg" alt="" />
-            <span>Trança Nagô</span>
+            <span>Entrelace</span>
           </div>
           <div class="services-card">
             <img src="./assets/mermaid-braids.jpg" alt="" />
-            <span>Trança Nagô</span>
+            <span>Mermaid Braids</span>
           </div>
         </div>
       </section>
@@ -96,11 +97,11 @@
         <div class="services-carrousel">
           <div class="services-card">
             <img src="./assets/manicure.png" alt="" />
-            <span>Trança Nagô</span>
+            <span>Manicure</span>
           </div>
           <div class="services-card">
             <img src="./assets/pedicure.png" alt="" />
-            <span>Trança Nagô</span>
+            <span>Pedicure</span>
           </div>
         </div>
       </section>
@@ -112,20 +113,20 @@
         <div class="services-carrousel">
           <div class="services-card">
             <img src="./assets/fibra-de-vidro.png" alt="" />
-            <span>Trança Nagô</span>
+            <span>Fibra de vidro</span>
           </div>
           <div class="services-card">
             <img src="./assets/postiça-realista.png" alt="" />
-            <span>Trança Nagô</span>
+            <span>Postiça Realista</span>
           </div>
           <div class="services-card">
             <img src="./assets/gel-na-tipsy.png" alt="" />
-            <span>Trança Nagô</span>
+            <span>Gel na Tipsy</span>
           </div>
         </div>
       </section>
     </div>
-    <div class="about">
+    <div id="about">
       <div class="about-text">
         <h2>Sobre mim</h2>
         <p>O Studio Nega Doce, fundado em 2024 pela visionária Kawane Santos, é uma ode à integração da rica cultura
@@ -153,40 +154,68 @@
         <img src="./assets/img-about.png" alt="" />
       </div>
     </div>
-    <div class="form-content">
+    <div id="form-content">
       <h2>Agende seu atendimento</h2>
       <p>
         Gostaria de agendar conosco? Preencha esse formulário que entraremos em contato para confirmação (cabelos sempre
         entre 1 a 2 dias de agendamento antecipado).
       </p>
-      <form id="form-agendamento" action="" method="POST">
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome" required><br><br>
+      <form id="form-agendamento">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br>
 
-        <label for="celular">Celular (WhatsApp):</label><br>
-        <input type="tel" id="celular" name="celular" pattern="[0-9]{2}[0-9]{9}" required><br><br>
+        <label for="celular">Celular (WhatsApp):</label>
+        <input type="tel" id="celular" name="celular" pattern="[0-9]{2}[0-9]{9}" placeholder="EX.: 11999999999"
+          required><br>
 
-        <label for="servico">Serviço que deseja fazer:</label><br>
+        <label for="servico">Serviço que deseja fazer:</label>
         <select id="servico" name="servico" required>
-          <option value="Corte de cabelo">Corte de cabelo</option>
-          <option value="Manicure">Manicure</option>
-          <option value="Pedicure">Pedicure</option>
-          <option value="Maquiagem">Maquiagem</option>
-          <option value="Outro">Outro</option>
-        </select><br><br>
+          <option value="Tranças">Trança</option>
+          <option value="Manicure/pedicure">Manicure/pedicure</option>
+          <option value="Nail Designer">Nail Designer</option>
+        </select><br>
 
-        <label for="outro_servico">Outro serviço:</label><br>
-        <input type="text" id="outro_servico" name="outro_servico"><br><br>
+        <label for="outro_servico">Outro serviço:</label>
+        <input type="text" id="outro_servico" name="outro_servico"><br>
 
-        <label for="data">Data:</label><br>
-        <input type="date" id="data" name="data" required><br><br>
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data" required><br>
 
-        <label for="horario">Horário:</label><br>
-        <input type="time" id="horario" name="horario" required><br><br>
+        <label for="horario">Horário:</label>
+        <input type="time" id="horario" name="horario" required><br>
 
         <button type="submit">Agendar</button>
       </form>
-      <!-- <img src="./assets/img-form.png" alt="" /> -->
+      <!-- <img src="./assets/form-img.png" alt="" /> -->
+    </div>
+    <div id="contact">
+      <div class="contact-text">
+        <img src="./assets/logo-contact.png" />
+        <ul class="contact-infos">
+          <li>
+            <i class="ph-fill ph-envelope-open"></i>
+            <span>E-mail: organizacao@studionegadoce</span>
+          </li>
+          <li>
+            <i class="ph-fill ph-phone-call"></i>
+            <span>Telefone: (11) 93245-4323</span>
+          </li>
+          <li>
+            <i class="ph-fill ph-map-pin"></i>
+            <span>Endereço: Avenida Elísio Teixeira Leite, 1835 - Loja A / cep: 02801-000</span>
+          </li>
+        </ul>
+        <ul class="social-media">
+          <li>
+            <i class="ph-fill ph-instagram-logo"></i>
+            <span>Instagram: @Studionegadoce </span>
+          </li>
+          <li>
+            <i class="ph-fill ph-facebook-logo"></i>
+            <span>Facebook: Studio Nega Doce</span>
+          </li>
+      </div>
+      <img src="./assets/mulher-contato.png" />
     </div>
   </main>
   <footer>
