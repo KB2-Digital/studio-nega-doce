@@ -10,9 +10,8 @@
     gap: 40px;
   }
 
-  form,
-  #form-content p {
-    width: 80%;
+  #form-content {
+    flex-direction: column-reverse;
   }
 
   #contact {
@@ -22,6 +21,10 @@
   @media (max-width: 822px) {
     header ul {
       display: none;
+    }
+
+    #form-content div {
+      width: 100%;
     }
   }
 
@@ -34,7 +37,25 @@
       width: 350px;
     }
 
+    #about {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    #about .about-text p {
+      font-size: 18px;
+    }
+
     .about-img img {
+      width: 350px;
+    }
+
+    #form-content {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    #form-content img {
       width: 350px;
     }
   }
@@ -49,6 +70,10 @@
     }
 
     .about-img img {
+      width: 300px;
+    }
+
+    #form-content img {
       width: 300px;
     }
   }
