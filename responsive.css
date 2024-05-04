@@ -14,6 +14,10 @@
     flex-direction: column-reverse;
   }
 
+  #form-content .form-content-text {
+    width: 75%;
+  }
+
   #contact {
     flex-direction: column;
   }
@@ -23,7 +27,7 @@
       display: none;
     }
 
-    #form-content div {
+    #form-content .form-content-text {
       width: 100%;
     }
   }
@@ -51,8 +55,16 @@
     }
 
     #form-content {
-      padding-left: 20px;
-      padding-right: 20px;
+      padding: 0;
+    }
+
+    #form-content .form-content-text {
+      border: none;
+      border-radius: 0;
+    }
+
+    form div {
+      flex-direction: column;
     }
 
     #form-content img {
