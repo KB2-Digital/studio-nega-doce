@@ -67,6 +67,10 @@
       flex-direction: column;
     }
 
+    .form h2 {
+      margin-bottom: 40px;
+    }
+
     #form-content img {
       width: 350px;
     }
