@@ -17,5 +17,5 @@ document.getElementById('form-agendamento').addEventListener('submit', function(
     'Horário: ' + horario + '\n' +
     'Meu contato: ' + celular;
 
-  window.open('https://api.whatsapp.com/send?phone=119324543253&text=' + encodeURIComponent(mensagem));
+  window.open('https://api.whatsapp.com/send?phone=11932454325&text=' + encodeURIComponent(mensagem));
 });
