@@ -11,7 +11,9 @@
   }
 
   #form-content {
-    flex-direction: column-reverse;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   #form-content .form-content-text {
@@ -22,13 +24,23 @@
     flex-direction: column;
   }
 
-  @media (max-width: 822px) {
+  @media (max-width: 938px) {
     header ul {
       display: none;
     }
 
+    #form-content {
+      justify-content: center;
+    }
+
     #form-content .form-content-text {
+      position: initial;
+
       width: 100%;
+    }
+
+    #form-content img {
+      display: none;
     }
   }
 
